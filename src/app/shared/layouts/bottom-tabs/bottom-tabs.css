@@ -1,0 +1,12 @@
+.bottom-tabs-content {
+  display: block;
+  height: var(--bootom-tabs-height);
+}
+
+.bottom-tabs-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
