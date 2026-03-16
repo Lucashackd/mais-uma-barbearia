@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100vh;
   gap: 2rem;
+  background-color: #0b0b0b;
 }
 
 .main-content {

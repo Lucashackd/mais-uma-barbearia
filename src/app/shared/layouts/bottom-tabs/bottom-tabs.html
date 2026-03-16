@@ -1,8 +1,15 @@
 <div class="bottom-tabs-content">
   <ul class="bottom-tabs-list">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/servicos">Serviços</a></li>
-    <li><a routerLink="/contato">Contato</a></li>
-    <li><a routerLink="/agendamento">Agendamento</a></li>
+    @for (link of navigation.links; track link.path) {
+      <li>
+        <a class="bottom-tabs-link" [routerLink]="link.path" routerLinkActive="active-tab"
+           [routerLinkActiveOptions]="{ exact: link.path === '/' }" aria-label="{{ link.ariaLabel }}">
+
+          <span class="material-symbols-rounded bottom-tabs-link-icon">{{ link.icon }}</span>
+          <span class="bottom-tabs-link-text">{{ link.label }}</span>
+          
+        </a>
+      </li>
+    }
   </ul>
 </div>
