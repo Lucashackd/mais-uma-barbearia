@@ -9,7 +9,7 @@
   display: block;
   height: var(--bootom-tabs-height);
   background-color: transparent;
-  border-top: 1px solid #222;
+  border-top: 1px solid #2d2d2d;
 
   .bottom-tabs-list {
     display: flex;
@@ -24,7 +24,8 @@
       align-items: center;
       gap: 0.25rem;
       text-decoration: none;
-      color: #8e8e93;
+      color: #525e6f;
+      transition: transform 0.1s ease, color 0.3s ease;
 
       .bottom-tabs-link-icon {
         width: 1.5rem;
@@ -34,19 +35,25 @@
 
       .bottom-tabs-link-text {
         font-size: 0.75rem;
-        font-weight: 400;
+        font-weight: 500;
         transition: color 0.3s ease;
+        user-select: none;
       }
+    }
+
+    .bottom-tabs-link:active {
+      transform: scale(0.95);
+      color: #76839a;
     }
 
     .active-tab {
       .bottom-tabs-link-text {
         color: #fff;
-        font-weight: 600; /* Dá um leve negrito no texto para destacar mais */
+        font-weight: 600;
       }
 
       .bottom-tabs-link-icon {
-        color: #7f0df2; /* Seu roxo da barbearia */
+        color: #A749FF;
       }
     }
   }

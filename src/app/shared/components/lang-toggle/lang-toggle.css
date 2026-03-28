@@ -1,0 +1,33 @@
+.lang-toggle-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid #525e6f;
+  border-radius: 0.5rem;
+  padding: 4px 8px;
+  background-color: #1A1A1A;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+
+  .lang-text {
+    color: #525e6f;
+    font-size: 0.625rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  .lang-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #525e6f;
+    border-radius: 0.125rem;
+  }
+
+  .lang-text.active-lang {
+    color: #A749FF;
+  }
+}
+
+.lang-toggle-button:active {
+  transform: scale(0.95);
+  background-color: #212121;
+}

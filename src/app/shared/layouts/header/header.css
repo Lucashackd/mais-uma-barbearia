@@ -3,5 +3,24 @@
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
+  width: 100vw;
   padding: 0 1rem;
+  border-bottom: 1px solid #2d2d2d;
+
+  .logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 3/2;
+    height: 100%;
+    transition: transform 0.1s ease;
+
+    .logo {
+      align-items: start;
+    }
+  }
+
+  .logo-container:active {
+    transform: scale(0.95);
+  }
 }

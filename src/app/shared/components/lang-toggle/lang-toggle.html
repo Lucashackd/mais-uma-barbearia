@@ -1,1 +1,5 @@
-<p>lang-toggle works!</p>
+<button class="lang-toggle-button" (click)="toggleLang()" aria-label="Alternar idioma">
+  <span class="lang-text" [class.active-lang]="currentLang() === 'pt-BR'">PT</span>
+  <div class="lang-separator"></div>
+  <span class="lang-text" [class.active-lang]="currentLang() === 'es-AR'">ES</span>
+</button>

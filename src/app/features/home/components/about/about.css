@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
+
+  .about-info {
+    font-size: 0.625rem;
+    color: #A749FF;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .about-title {
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #76839a;
+    margin-bottom: 16px;
+  }
+
+  .about-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

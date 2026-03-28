@@ -1,0 +1,15 @@
+<section class="about">
+  <span class="about-info">Desde 2021</span>
+  <h2 class="about-title">Sobre a barbearia</h2>
+  <div class="about-text">
+    <p>Localizada no coração de Torres, a +Uma Barbearia provê um santuário para o homem moderno. Nós acreditamos que os cuidados masculinos são mais do que apenas um serviço = é uma experiência que amplifica a confiança e define sua marca pessoal </p>
+    <p>Nosso espaço é pensado para oferecer conforto, segurança e privacidade, criando um ambiente acolhedor para cada cliente.</p>
+  </div>
+  <div class="about-stats">
+    @for (stat of stats; track stat.label) {
+      <app-stat-card [icon]="stat.icon" [value]="stat.value" [label]="stat.label"/>
+    }
+  </div>
+</section>
+
+
