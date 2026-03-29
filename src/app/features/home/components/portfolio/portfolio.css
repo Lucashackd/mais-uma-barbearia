@@ -1,0 +1,52 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100dvw;
+  height: fit-content;
+  overflow: hidden;
+
+  .portfolio-title {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: bolder;
+    padding: 0 16px;
+  }
+
+  .portfolio-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    padding: 16px 0;
+
+    .carousel-track {
+      display: flex;
+      gap: 8px;
+      width: max-content;
+      animation: scroll-left 40s linear infinite;
+
+      .carousel-slide {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .carousel-track:hover {
+      animation-play-state: paused;
+    }
+
+    .carousel-image {
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
