@@ -1,14 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 16px;
+  gap: 32px;
   width: 100dvw;
 
   .service-cards {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 0 16px;
     width: 100%;
     height: fit-content;
   }
