@@ -1,0 +1,13 @@
+<div class="service-card">
+  <span class="material-symbols-rounded service-card-icon">{{ service().icon }}</span>
+  <div class="service-card-content">
+    <div class="service-card-header">
+      <h2 class="service-card-title">{{ service().title }}</h2>
+      <div class="service-card-time-container">
+        <span class="material-symbols-rounded service-card-time-icon">av_timer</span>
+        <span class="service-card-time-duration">{{ service().time }}</span>
+      </div>
+    </div>
+    <p class="service-card-description">{{ service()?.description }}</p>
+  </div>
+</div>

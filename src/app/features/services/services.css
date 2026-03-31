@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 16px;
+  width: 100dvw;
+
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: fit-content;
+  }
+}

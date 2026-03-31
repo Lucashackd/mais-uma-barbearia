@@ -1,1 +1,8 @@
-<p>services works!</p>
+<div class="container">
+  <app-banner/>
+  <div class="service-cards">
+    @for (service of services; track service.id) {
+      <app-service-card [service]="service"/>
+    }
+  </div>
+</div>

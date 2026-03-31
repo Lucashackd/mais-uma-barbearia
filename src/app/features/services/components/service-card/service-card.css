@@ -1,0 +1,76 @@
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  border: 1px solid #525e6f;
+  gap: 16px;
+
+  .service-card-icon {
+    font-size: 20px;
+    color: #A749FF;
+    background-color: #000000;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+
+    .service-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .service-card-title {
+        color: #ffffff;
+        font-size: 1.25rem;
+      }
+
+      .service-card-time-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 4px;
+        color: #A749FF;
+        font-weight: bolder;
+        flex-shrink: 0;
+
+        .service-card-time-icon {
+          font-size: 1rem;
+        }
+
+        .service-card-time-duration {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .service-card-description {
+      color: #76839a;
+      font-size: 1rem;
+    }
+  }
+}
