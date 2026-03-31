@@ -3,7 +3,7 @@ import { Component, input } from '@angular/core';
 export interface ServiceCardData {
   id: number;
   title: string;
-  description?: string;
+  description?: string | null;
   icon: string;
   time: string;
 }
