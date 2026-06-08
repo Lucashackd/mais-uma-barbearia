@@ -58,7 +58,7 @@ export default class Services {
     },
     {
       id: 7,
-      title: 'Cera (nariz, ou orelha)',
+      title: 'Cera (nariz ou orelha)',
       icon: 'water_drop',
       time: '15 min',
     },
