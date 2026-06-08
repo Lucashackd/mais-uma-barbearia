@@ -1,0 +1,117 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 16px;
+
+  .info-title {
+    color: #ffffff;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .info-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      height: fit-content;
+      padding: 16px;
+      background-color: #000000;
+      border-radius: 8px;
+      border: 1px solid #525e6f;
+      gap: 16px;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        background-color: #A749FF22;
+        border-radius: 4px;
+        padding: 16px;
+        width: fit-content;
+        height: fit-content;
+
+        .info-card-icon {
+          color: #A749FF;
+          font-size: 2rem;
+        }
+      }
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        width: 100%;
+
+        .info-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 4px;
+          width: 100%;
+          font-size: 1.125rem;
+
+          .title {
+            color: #ffffff;
+            font-weight: bold;
+          }
+
+          .description {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 100%;
+            list-style: none;
+            color: #76839a;
+
+            .description-item {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              padding: 8px;
+
+              .hour {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 2px;
+              }
+            }
+
+            li:nth-child(odd) {
+              background-color: #0a0a0a;
+              border-radius: 4px;
+            }
+          }
+
+          ol {
+            margin-top: 8px;
+          }
+        }
+
+        .info-link {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          cursor: pointer;
+          color: #A749FF;
+          text-decoration: none !important;
+          font-size: 0.875rem;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+
+          .info-link-icon {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+}

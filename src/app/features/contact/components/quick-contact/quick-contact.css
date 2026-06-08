@@ -1,0 +1,38 @@
+.quick-contact {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    height: fit-content;
+    padding: 16px 0;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none !important;
+    cursor: pointer;
+
+    .card-icon {
+      font-size: 2rem;
+      color: #A749FF;
+    }
+  }
+
+  .whatsapp {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+  }
+
+  .facebook, .instagram {
+    background-color: #1A1A1A;
+    border: 1px solid #525e6f;
+    color: #ffffff;
+  }
+}
