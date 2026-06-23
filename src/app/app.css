@@ -11,5 +11,5 @@
   align-items: center;
   height: calc(100vh - (var(--header-height) + var(--bootom-tabs-height)));
   overflow-y: auto;
-  padding-bottom: 16px;
+  padding-bottom: 40px;
 }
