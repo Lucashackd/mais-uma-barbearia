@@ -1,0 +1,53 @@
+<div class="modal-backdrop" (click)="closeModal.emit()">
+
+  <div class="modal-content" (click)="$event.stopPropagation()">
+
+    <header class="modal-header">
+      <h2>Termos e Condições de Uso</h2>
+      <button class="close-button" (click)="closeModal.emit()" aria-label="Fechar">&times;</button>
+    </header>
+
+    <ol class="modal-body">
+      <li>
+        <h3>Aceitação dos Termos</h3>
+        <p>Ao acessar e utilizar o site +Uma Barbearia (disponível em https://www.maisumabarbearia.com.br), o usuário concorda com estes Termos de Uso. Caso não concorde com alguma das condições, pedimos que não utilize nosso site.</p>
+      </li>
+
+      <li>
+        <h3>Objetivo do Site</h3>
+        <p>Este site tem caráter informativo, apresentando os serviços, profissionais e o portfólio da +Uma barbearia. O site atua também como uma ponte de direcionamento para o nosso sistema de agendamento online.</p>
+      </li>
+
+      <li>
+        <h3>Redirecionamento e Sites de Terceiros</h3>
+        <p>Para realizar um agendamento, o usuário será redirecionado para uma plataforma externa (Belasis).</p>
+        <ul>
+          <li>A +Uma Barbearia não se responsabiliza pelas políticas de privacidade, termos de uso, disponibilidade ou segurança de sites de terceiros.</li>
+          <li>Todo o processo de agendamento, pagamento (se aplicável) e cancelamento ocorrerá sob as regras da plataforma externa.</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Propriedade Intelectual</h3>
+        <p>Todo o conteúdo deste site, incluindo logotipos, textos, imagens e estrutura de design (como os componentes visuais desenvolvidos para a interface), são de propriedade exclusiva da +Uma Barbearia ou de seus licenciantes. É proibida a cópia, reprodução ou uso não autorizado.</p>
+      </li>
+
+      <li>
+        <h3>Responsabilidades do Usuário</h3>
+        <p>O usuário compromete-se a utilizar o site de boa-fé, não empregando softwares maliciosos, não tentando invadir os sistemas do site e não utilizando as informações aqui contidas para fins ilícitos ou concorrenciais de forma desleal.</p>
+      </li>
+
+      <li>
+        <h3>Alterações nos Termos</h3>
+        <p>A +Uma Barbearia reserva-se o direito de modificar estes Termos de Uso a qualquer momento. O uso contínuo do site após as alterações indica a aceitação dos novos termos.</p>
+      </li>
+
+      <li>
+        <h3>Foro</h3>
+        <p>Para dirimir quaisquer dúvidas ou litígios referentes a estes Termos, fica eleito o foro da comarca de Torres/RS, com renúncia a qualquer outro, por mais privilegiado que seja.</p>
+      </li>
+    </ol>
+
+  </div>
+
+</div>

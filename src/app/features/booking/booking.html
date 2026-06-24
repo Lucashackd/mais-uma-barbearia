@@ -1,1 +1,38 @@
-<p>booking works!</p>
+<div id="booking-container">
+  <div class="icon-container">
+    <span class="material-symbols-rounded icon">stars</span>
+  </div>
+
+  <div class="booking-info">
+    <h1 class="booking-title">Pronto para um <span class="booking-title-highlight">novo visual</span>?</h1>
+    <p class="booking-description">Você será redirecionado para o site de reservas externo para concluir o seu
+      agendamento de forma segura.
+    </p>
+
+    <div class="booking-form">
+      <button class="booking-button">
+        Ir para Agendamento Externo
+        <span class="material-symbols-rounded booking-button-icon">
+            open_in_new
+        </span>
+      </button>
+
+      <span class="external-site-advice">Ambiente seguro & confiável</span>
+
+      <div class="privacy-disclaimer">
+        <span class="privacy-text">
+          Ao prosseguir, você concorda com nossos <button class="privacy-button" (click)="openTermsModal()">Termos de uso</button> e <button class="privacy-button" (click)="openPrivacyModal()">Política de Privacidade</button>.
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+@if (isTermsModalOpen()) {
+  <app-terms-modal (closeModal)="isTermsModalOpen.set(false)"/>
+}
+
+@if (isPrivacyModalOpen()) {
+  <app-privacy-modal (closeModal)="isPrivacyModalOpen.set(false)"/>
+}
