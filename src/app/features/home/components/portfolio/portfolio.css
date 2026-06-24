@@ -1,8 +1,13 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100dvw;
+  width: 100%;
   height: fit-content;
   overflow: hidden;
 

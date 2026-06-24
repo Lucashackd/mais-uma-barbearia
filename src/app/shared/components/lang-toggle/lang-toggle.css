@@ -5,7 +5,7 @@
   border: 1px solid #525e6f;
   border-radius: 0.5rem;
   padding: 4px 8px;
-  background-color: #1A1A1A;
+  background-color: #0a0a0a;
   transition: transform 0.1s ease, background-color 0.3s ease;
 
   .lang-text {
