@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  border: 1px solid #525e6f;
+  border: 1px solid #76839a;
   border-radius: 0.5rem;
   padding: 4px 8px;
   background-color: #0a0a0a;
   transition: transform 0.1s ease, background-color 0.3s ease;
 
   .lang-text {
-    color: #525e6f;
+    color: #76839a;
     font-size: 0.625rem;
     font-weight: 700;
     transition: color 0.3s ease;

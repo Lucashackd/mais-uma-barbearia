@@ -24,7 +24,7 @@
       align-items: center;
       gap: 0.25rem;
       text-decoration: none;
-      color: #525e6f;
+      color: #76839a;
       transition: transform 0.1s ease, color 0.3s ease;
 
       .bottom-tabs-link-icon {
